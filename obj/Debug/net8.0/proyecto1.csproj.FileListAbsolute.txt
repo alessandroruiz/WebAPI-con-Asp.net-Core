@@ -170,3 +170,4 @@ C:\Users\ALESSANDRO\Desktop\proyecto Api con .net\proyecto1\proyecto1\obj\Debug\
 C:\Users\ALESSANDRO\Desktop\proyecto Api con .net\proyecto1\proyecto1\obj\Debug\net8.0\proyecto1.pdb
 C:\Users\ALESSANDRO\Desktop\proyecto Api con .net\proyecto1\proyecto1\obj\Debug\net8.0\proyecto1.genruntimeconfig.cache
 C:\Users\ALESSANDRO\Desktop\proyecto Api con .net\proyecto1\proyecto1\obj\Debug\net8.0\ref\proyecto1.dll
+C:\Users\ALESSANDRO\Desktop\proyecto Api con .net\proyecto1\proyecto1\obj\Debug\net8.0\proyecto1.sourcelink.json
