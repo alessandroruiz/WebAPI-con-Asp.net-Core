@@ -1,3 +1,4 @@
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using proyecto1.Data;
 using proyecto1.Services.Interfaces;
@@ -21,7 +22,18 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var dataContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    dataContext.Database.Migrate();
+    try
+    {
+        dataContext.Database.OpenConnection();
+        dataContext.Database.CloseConnection();
+    
+        dataContext.Database.Migrate();
+    }
+    catch (SqlException ex)
+    {
+        Console.WriteLine($"Error de conexión SQL: {ex.Message}");
+        throw;
+    }
 }
 
 // Configure the HTTP request pipeline.
